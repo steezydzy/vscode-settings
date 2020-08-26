@@ -80,5 +80,6 @@
         "editor.defaultFormatter": "xaver.clang-format"
     },
     "editor.multiCursorModifier": "alt",
-    "search.searchOnType": true
+    "search.searchOnType": true,
+    "C_Cpp.updateChannel": "Insiders"
 }
