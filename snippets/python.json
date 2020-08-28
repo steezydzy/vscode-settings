@@ -1,0 +1,35 @@
+{
+	"py-main": {
+		"prefix": "py-main",
+		"body": [
+			"import argparse",
+			"",
+			"def main():",
+			"    $0",
+			"",
+			"if __name__ == '__main__':",
+			"    parser = argparse.ArgumentParser(",
+			"        description=__doc__,",
+			"        formatter_class=argparse.ArgumentDefaultsHelpFormatter)",
+			"    parser.add_argument('$1', help='$2', default='$3')",
+			"",
+			"    args = parser.parse_args()",
+			"    main()"
+		],
+		"description": "py-main"
+	},
+	"ipython embed": {
+		"prefix": "ipython",
+		"body": [
+			"import IPython; IPython.embed()"
+		],
+		"description": "ipython embed"
+	},
+	"third_party": {
+		"prefix": "third_party",
+		"body": [
+			"import third_party.py  # pylint: disable=unused-import"
+		],
+		"description": "third_party"
+	}
+}

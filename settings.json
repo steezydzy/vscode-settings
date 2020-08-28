@@ -72,7 +72,6 @@
         },
     ],
     "editor.minimap.enabled": false,
-    "editor.formatOnSave": true,
     "window.zoomLevel": 1,
     "breadcrumbs.enabled": true,
     "workbench.statusBar.visible": true,
@@ -81,5 +80,6 @@
     },
     "editor.multiCursorModifier": "alt",
     "search.searchOnType": true,
-    "C_Cpp.updateChannel": "Insiders"
+    "C_Cpp.updateChannel": "Insiders",
+    "editor.formatOnSave": true
 }
