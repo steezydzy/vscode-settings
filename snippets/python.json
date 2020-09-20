@@ -31,5 +31,29 @@
 			"import third_party.py  # pylint: disable=unused-import"
 		],
 		"description": "third_party"
+	},
+	"user-defined exception": {
+		"prefix": "exception",
+		"body": [
+			"class $1(Exception):",
+			"    \"\"\"Exception raised for $2\"\"\"",
+			"    def __init__(self, msg):",
+			"        super().__init__('$3: {}'.format(msg))",
+			""
+		],
+		"description": "user-defined exception"
+	},
+	"def-method": {
+		"prefix": "def",
+		"body": [
+			"def $1($2: $3) -> $4:",
+			"    \"\"\"$5",
+			"",
+			"    Args:",
+			"        :$6",
+			"    \"\"\"",
+			"    $7"
+		],
+		"description": "def-method"
 	}
 }

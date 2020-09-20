@@ -31,11 +31,37 @@
 			"",
 			"    av::parse_command_line(argc, argv, options_desc, \"\");",
 			"",
-			"    '$0'",
+			"    $0",
 			"    return EXIT_SUCCESS;",
 			"}",
 			""
 		],
 		"description": "cpp main"
+	},
+	"write-file": {
+		"prefix": "write-file",
+		"body": [
+			"std::ofstream outfile;",
+			"outfile.open(\"$1\");",
+			"outfile << $2;",
+			"outfile.close();"
+		],
+		"description": "write-file"
+	},
+	"read-file": {
+		"prefix": "read-file",
+		"body": [
+			"std::ifstream in(\"$1\");",
+			"std::stringstream buffer;",
+			"buffer << in.rdbuf();"
+		],
+		"description": "read-file"
+	},
+	"incl": {
+		"prefix": "incl",
+		"body": [
+			"#include \"$1\""
+		],
+		"description": "incl"
 	}
 }

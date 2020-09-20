@@ -81,5 +81,11 @@
     "editor.multiCursorModifier": "alt",
     "search.searchOnType": true,
     "C_Cpp.updateChannel": "Insiders",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "[proto3]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    }
 }
