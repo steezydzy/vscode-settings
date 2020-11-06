@@ -55,5 +55,35 @@
 			"    $7"
 		],
 		"description": "def-method"
+	},
+	"argparse_bool": {
+		"prefix": "argparse_bool",
+		"body": [
+			"parser.add_argument('$1', action='store_false', help='$2')"
+		],
+		"description": "argparse_bool"
+	},
+	"refresh-dir": {
+		"prefix": "refresh-dir",
+		"body": [
+			"def refresh_dir(path):",
+			"    \"\"\"Hacky debugging snippet to delete directory if it exists and replace it\"\"\"",
+			"    import shutil",
+			"    if os.path.exists(path):",
+			"        print('deleted stuff')",
+			"        shutil.rmtree(path, ignore_errors=True)",
+			"    print('created stuff')",
+			"    os.makedirs(path)",
+			"    import time",
+			"    time.sleep(1)"
+		],
+		"description": "refresh-dir"
+	},
+	"make-dir": {
+		"prefix": "make-dir",
+		"body": [
+			"os.makedirs(output_dir, exist_ok=True)"
+		],
+		"description": "make-dir"
 	}
 }
