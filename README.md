@@ -6,7 +6,7 @@ To effectively use and maintain this directory, follow the installation instruct
 
 _WARNING_: Following these instructions will overwrite any existing custom settings in your local VSCode installation with the ones in this repo.
 
-_Prequisite_: Set the config directory of your VSCode installation `VSCODE_DIR` or similarly named environment variable. As of v1.52.1, this means:
+_Prerequisite_: Set the config directory of your VSCode installation `VSCODE_DIR` or similarly named environment variable. As of v1.52.1, this means:
 ```
 # For Ubuntu
 export VSDIR="$HOME/.config/Code/User/"
