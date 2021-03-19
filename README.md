@@ -28,3 +28,4 @@ Note that these settings do store extensions, so when setting up a new machine, 
 
 - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 - [Snippet Creator](https://marketplace.visualstudio.com/items?itemName=ryanolsonx.snippet-creator)
+- [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
